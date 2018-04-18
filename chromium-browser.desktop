@@ -59,7 +59,7 @@ Comment[vi]=Duyệt web
 Comment[wa]=Naivyî so les pådjes waibe
 Comment[zh_CN]=浏览 Web
 Comment[zh_TW]=瀏覽網頁
-Exec=chromium-browser --ignore-gpu-blacklist --enable-experimental-canvas-features --enable-accelerated-2d-canvas --canvas-msaa-sample-count=2 --force-display-list-2d-canvas --force-gpu-rasterization --enable-fast-unload --enable-accelerated-vpx-decode --enable-tcp-fastopen --javascript-harmony --enable-checker-imaging --v8-cache-options=code --v8-cache-strategies-for-cache-storage=aggressive --enable-zero-copy --ui-enable-zero-copy --enable-native-gpu-memory-buffers --enable-webgl-image-chromium
+Exec=chromium-browser --ignore-gpu-blacklist --enable-experimental-canvas-features --enable-accelerated-2d-canvas --canvas-msaa-sample-count=2 --force-display-list-2d-canvas --force-gpu-rasterization --enable-fast-unload --enable-accelerated-vpx-decode=3 --enable-tcp-fastopen --javascript-harmony --enable-checker-imaging --v8-cache-options=code --v8-cache-strategies-for-cache-storage=aggressive --enable-zero-copy --ui-enable-zero-copy --enable-native-gpu-memory-buffers --enable-webgl-image-chromium
 GenericName[ru_RU]=Веб-браузер
 GenericName=Веб-браузер
 GenericName[af]=Web Blaaier
@@ -184,10 +184,11 @@ Name[tr]=Chromium Ağ Tarayıcısı
 Name[uk]=Навігатор тенет Chromium
 Name[zh_CN]=Chromium Web 浏览器
 Name[zh_TW]=Chromium 網頁瀏覽器
-Path=
+NoDisplay=false
+Path[$e]=
 StartupNotify=true
 StartupWMClass=Chromium-browser
-Terminal=false
+Terminal=0
 TerminalOptions=
 Type=Application
 Version=1.0
